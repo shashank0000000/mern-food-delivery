@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 // placing user order for frontend
 const placeOrder = async (req, res) => {
 
-    const frontend_url = "http://localhost:5174" // Updated to match Vite default port
+    const frontend_url = "https://mern-food-delivery-frontend-e1xi.onrender.com/" // Updated to match Vite default port
 
     try {
         console.log("Order placement request received:", {
